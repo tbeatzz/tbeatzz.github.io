@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/unnamed.ico">
+    <title>Heart</title>
+    <link rel="shortcut icon" href="./images/unnamed.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font/css/all.css">
+    <link rel="./font/css/fontawesome.css" rel="stylesheet">
+    <link rel="./font/css/brands.css" rel="stylesheet">
+    <link rel="./font/css/solid.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--NAVEGACION-->
+    <header>
+        <a class="brand"style="text-decoration: none;" href="../index.html"><bold>Tbeatz</bold></a>
+        <nav class="menu">  
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <ul> 
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../beats.html">Beats</a></li>
+              <li><a href="../info.html">Sobre mí</a></li>
+              <li><a href="../contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+    <main class="main-beats">  
+      
+        <section id="containerpubli"> 
+            <div class="publicacion">
+                <div id="producto">
+                    <div id="topproducto">
+                        <div class="fotoproducto">
+                            <figure >
+                                <div >	
+                                    <img class="fotoartwork" src="../images/heart/heart.jpg"/>
+                                </div>
+                            </figure>
+                        </div>
+        
+                        <div class="infoproducto">
+                            <nav class="datoproducto">
+                                
+                                <a class="link" href="../index.html">INICIO</a> / <a class="link" href="../beats.html">BEATS</a> / <a class="link" href="../beats/heart.html">➤ Polo G type beat - "Heart"
+                                </a>
+                                
+                            </nav>
+                            <h1 class="productotitle" style="color: white;">Polo G type beat - "Heart"</h1>
+                            <p class="priceprod"> <span style="color: white;font-size: 20px;">500$ ARS</span> </p>
+                            <form class="botonproducto"> 
+                                <button type="button" class=" btn btn-danger btn-lg" id="boton">
+                                    Añadir al carrito
+                                </button>	
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="botproducto">
+                            <div class="videoproducto">
+                                <div class="iframevideo">
+                                    <iframe class="videoprod" src="https://www.youtube.com/embed/3OROPrUf3wY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                    </div> 
+                </div>
+            </div>  
+           </section>
+
+    </main>
+    <!--Pie de página-->
+    <section class="footer">
+    <footer>    
+      <div class="footer-contenido">
+          <h3>Prod.tbeatz</h3>
+          <p>Esta página está dedicada hacia la venta de servicios musicales, esperamos que nos elijas para tu próximo proyecto musical</p>
+          <ul class="redes">
+              <li><a href="https://www.youtube.com/c/tbeatzz"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="https://www.instagram.com/tbeatzz_/"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </div>
+      <div class="copyr">
+          <p>🔒 Prod.tbeatz 2020 - 2021 All Rights Reserved ©</p>
+      </div>
+    </footer> 
+    </section>    
+    <script type="text/javascript">
+      //efecto cuando se scrollea
+      window.addEventListener("scroll", function(){  //Registra un evento a un objeto en específico, 
+          var header = document.querySelector("header");
+          header.classList.toggle('down', window.scrollY > 0);
+          //change logo 
+      });
+  
+        //para el menu desplegable 
+          var menu = document.querySelector('.menu');
+          var menuBtn = document.querySelector('.menu-btn');
+          var closeBtn = document.querySelector('.close-btn');
+      
+          menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+          });
+      
+          closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+      });
+    </script>
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

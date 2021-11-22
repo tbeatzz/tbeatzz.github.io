@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="./images/unnamed.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font/css/all.css">
+    <link rel="./font/css/fontawesome.css" rel="stylesheet">
+    <link rel="./font/css/brands.css" rel="stylesheet">
+    <link rel="./font/css/solid.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--NAVEGACION-->
+    <header>
+        <a class="brand"style="text-decoration: none;" href="index.html"><bold>Tbeatz</bold></a>
+        <nav class="menu">  
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <ul> 
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="beats.html">Beats</a></li>
+              <li><a href="info.html">Sobre mi</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+    <main class="main">
+      <section class="contacto">
+        <div class="contenedor-contacto">
+
+            <h1 class="form-title">C<span>ontacto</span></h1>
+
+            <div class="contact-wrapper">
+              <div class="contact-form">
+                <h3 class="label-color">Contactanos</h3>
+                <form>
+                  <p>
+                    <label class="label-color" for="fullname">Nombre</label>
+                    <input class="no-back" type="text" name="fullname" id="fullname">
+                  </p>
+
+                  <p>
+                    <label class="label-color">Email</label>
+                    <input class="no-back" type="email" name="email">
+                  </p>
+
+                  <p>
+                    <label class="label-color">Teléfono</label>
+                    <input class="no-back" type="tel" name="phone">
+                  </p>
+
+                  <p>
+                    <label class="label-color" >Asunto</label>
+                    <input class="no-back" type="text" name="affair">
+                  </p>
+
+                  <p class="block">
+                    <label class="label-color" >Mensaje</label>
+                    <textarea class="textarea" id="comment" maxlength="400" name="message" onkeyup="countChars(this);"></textarea>
+                      <p class="caracteres-restantes" id="charNum">400 Caracteres restantes</p> 
+                  </p>
+
+                  <p class="block">
+                    <button class="contact-btn" type="submit">
+                      Enviar
+                       <!-- <a class="link" href="mensaje.html"></a>-->
+               
+                    </button>
+                  </p>
+                </form>
+              </div>
+            </div>
+        </div>      
+      </section>    
+    </main>
+    <!--Pie de página-->
+    <section class="footer">
+    <footer>    
+      <div class="footer-contenido">
+          <h3>Prod.tbeatz</h3>
+          <p>Esta página está dedicada hacia la venta de servicios musicales, esperamos que nos elijas para tu próximo proyecto musical</p>
+          <ul class="redes">
+              <li><a href="https://www.youtube.com/c/tbeatzz"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="https://www.instagram.com/tbeatzz_/"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </div>
+      <div class="copyr">
+          <p>🔒 Prod.tbeatz 2020 - 2021 All Rights Reserved ©</p>
+      </div>
+    </footer> 
+    </section>    
+    <script type="text/javascript">
+      //efecto cuando se scrollea
+      window.addEventListener("scroll", function(){  //Registra un evento a un objeto en específico, 
+          var header = document.querySelector("header");
+          header.classList.toggle('down', window.scrollY > 0);
+          //change logo 
+      });
+  
+        //para el menu desplegable 
+          var menu = document.querySelector('.menu');
+          var menuBtn = document.querySelector('.menu-btn');
+          var closeBtn = document.querySelector('.close-btn');
+      
+          menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+          });
+      
+          closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+      });
+    </script>
+
+    <script>
+      function countChars(obj){
+      var maxLength = 400               ;
+      var strLength = obj.value.length; 
+      var charRemain = (maxLength - strLength);
+      
+      if(charRemain < 0){
+          document.getElementById("charNum").innerHTML = '<span style="color: red;">Te haz excedido el limite '+maxLength+' de caracteres</span>';
+          
+      }else{
+          document.getElementById("charNum").innerHTML = charRemain+' caracteres restantes';
+      }
+    }
+    </script>
+
+
+
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

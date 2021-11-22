@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="./images/unnamed.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font/css/all.css">
+    <link rel="./font/css/fontawesome.css" rel="stylesheet">
+    <link rel="./font/css/brands.css" rel="stylesheet">
+    <link rel="./font/css/solid.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--NAVEGACION-->
+    <header>
+        <a class="brand"style="text-decoration: none;" href="index.html"><bold>Tbeatz</bold></a>
+        <nav class="menu">  
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <ul> 
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="beats.html">Beats</a></li>
+              <li><a href="info.html">Sobre mí</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+    <main class="main">
+
+      <section class="about-us">
+        <div class="about-us-inicio-container">
+          <div class="about-us-inicio-text">
+            <h3>Sobre mí</h3>
+            <p>Soy un productor y creador de contenido que vive en Argentina, 
+              Santa Cruz, Caleta Olivia. Hace más de 3 años que empece en la 
+              música y 2 en producción musical. Trabajo todos los días produciendo 
+              canciones y mejorando mi sonido.</p>
+          </div>
+          <div class="about-us-inicio-image">
+            <figure>
+              <img src="./images/fondo.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="about-us-spotify">
+        <div class="about-us-discography-tittle">
+          <h1>Discografía Spotify</h1>
+        </div>
+        <div class="spotify-discography-container">
+          <div class="spotify-card">
+            <h3>"Perdiendo" Fazic ft Kayio</h3>
+              <div class="iframe-spotify">
+                <iframe src="https://open.spotify.com/embed/track/54xwfmkua1RdRvS7jqzJ7e?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              </div>
+            <h3>Producer&Beatmaker</h3>
+          </div>
+
+          <div class="spotify-card">
+            <h3>"Roma" Fazic</h3>
+              <div class="iframe-spotify">
+                <iframe src="https://open.spotify.com/embed/track/3PgVOFKKZDoZsOmNvLug55?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              </div>
+            <h3>Producer&Beatmaker</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us-youtube">
+        <div class="about-us-discography-tittle">
+          <h1>Discografía youtube</h1>
+        </div>
+        <div class="youtube-discography-container">
+
+          <div class="youtube-card">
+              <h3>Kayio - Dime Dónde Estás</h3>
+              <div class="youtube-iframe">
+                <iframe src="https://www.youtube-nocookie.com/embed/AVavkazjQYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h3>Mix&Master</h3>
+          </div>
+
+          <div class="youtube-card">
+            <h3>Kidd Kayio - Veinte </h3>
+            <div class="youtube-iframe">
+              <iframe src="https://www.youtube-nocookie.com/embed/GHFopx5ZvAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>Producer&Beatmaker</h3>
+            
+        </div>
+        </div>
+      </section>
+
+    </main>
+    <!--Pie de página-->
+    <section class="footer">
+    <footer>    
+      <div class="footer-contenido">
+          <h3>Prod.tbeatz</h3>
+          <p>Esta página está dedicada hacia la venta de servicios musicales, esperamos que nos elijas para tu próximo proyecto musical</p>
+          <ul class="redes">
+              <li><a href="https://www.youtube.com/c/tbeatzz"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="https://www.instagram.com/tbeatzz_/"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </div>
+      <div class="copyr">
+          <p>🔒 Prod.tbeatz 2020 - 2021 All Rights Reserved ©</p>
+      </div>
+    </footer> 
+    </section>    
+    <script type="text/javascript">
+      //efecto cuando se scrollea
+      window.addEventListener("scroll", function(){  //Registra un evento a un objeto en específico, 
+          var header = document.querySelector("header");
+          header.classList.toggle('down', window.scrollY > 0);
+          //change logo 
+      });
+  
+        //para el menu desplegable 
+          var menu = document.querySelector('.menu');
+          var menuBtn = document.querySelector('.menu-btn');
+          var closeBtn = document.querySelector('.close-btn');
+      
+          menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+          });
+      
+          closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+      });
+    </script>
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
