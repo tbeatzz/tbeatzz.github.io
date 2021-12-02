@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/ec119c21cd.js" crossorigin="anonymous"></script>
+    <!--Estilos-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Spoti peruca</title>
+</head>
+<body>
+    <section>
+
+        <!--CURRENT PLAYING TRACK-->
+        <header>
+            <img src="./assets/img/0.jpg" alt="Current playing track">
+            <h3>Pop Punk</h3>
+            <p>Track desc</p>
+        </header>
+
+        <!--PLAYLIST LABEL-->
+        <label>Playlist</label>
+
+        <!--Track list-->
+        <ul>
+           
+        </ul>
+
+        <!--Music controls-->
+
+        <footer>
+            <!--slider-->
+            <div class="slider">
+                <div class="slider-progress">
+                    <div class="slider-pin"></div>
+                </div>
+            </div>
+
+            <!--Count-->
+            <div class="count">
+                <span class="count-current">00:01</span>
+                <span class="count-final">11:23</span>
+            </div>
+
+            <!--events-->
+            <div class="event">
+                <i class="fas fa-caret-left event-prev"></i>
+                <i class="fas fa-play event-playPause"></i>
+                <i class="fas fa-caret-right event-next"></i>
+                <i class="fas fa-volume-up event-muteUnmute"></i>
+            </div>
+        </footer>
+
+    </section>
+
+    <!--audio-->
+    <audio src="" id="audio"></audio>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
